@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:jamia_madrasa/all_views/parent/parent_navigation_screen/ParentFeeReceiptScreen.dart';
+import 'package:jamia_madrasa/all_views/parent/parent_navigation_screen/ParentReviewScreen.dart';
 
 import '../all_views/parent/parent_navigation_screen/ParentAttendanceScreen.dart';
 import '../all_views/parent/parent_navigation_screen/ParentDashboardScreen.dart';
@@ -25,9 +27,13 @@ class ParentsHomeController extends GetxController{
      selectedIndex.value = index;
      currentPage = ParentAttendanceScreen().obs;
    }else if(index==2){
+     pageTitle.value = "Fee Receipt".tr;
+     selectedIndex.value = index;
+     currentPage.value = ParentFeeReceiptScreen();
+   }else if(index==3){
      pageTitle.value = "Review".tr;
      selectedIndex.value = index;
-     // currentPage.value = ParentDashboardScreen();
+     currentPage.value = ParentReviewScreen();
    }
   }
 

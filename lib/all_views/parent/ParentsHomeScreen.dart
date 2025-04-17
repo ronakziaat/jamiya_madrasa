@@ -89,28 +89,25 @@ class NavigationDrawer extends StatelessWidget {
                                 Get.back();
                               },
                             ),
+
                             ListTile(
                               tileColor:
                               controller.selectedIndex == 2 ? Colors.grey[300] : Colors.transparent,
                               textColor: controller.selectedIndex == 2 ? AppThemeData.primary300 : Colors.black,
-                              title: Text('Review'),
+                              title: Text('Fee Receipt'),
                               onTap: () {
-                                /*controller.pageTitle = "Review".obs;
-                                controller.selectedIndex = 4.obs;
-                                controller.update();*/
-                                // onSelectPage(EbikeBookingsScreen());
+                                controller.selectPage(2);
+                                Get.back();
                               },
                             ),
                             ListTile(
                               tileColor:
-                              controller.selectedIndex == 4 ? Colors.grey[300] : Colors.transparent,
-                              textColor: controller.selectedIndex == 4 ? AppThemeData.primary300 : Colors.black,
-                              title: Text('Fee Receipt'),
+                              controller.selectedIndex == 3 ? Colors.grey[300] : Colors.transparent,
+                              textColor: controller.selectedIndex == 3 ? AppThemeData.primary300 : Colors.black,
+                              title: Text('Review'),
                               onTap: () {
-                                /*controller.pageTitle = "Review".obs;
-                                controller.selectedIndex = 4.obs;
-                                controller.update();*/
-                                // onSelectPage(EbikeBookingsScreen());
+                                controller.selectPage(3);
+                                Get.back();
                               },
                             ),
 

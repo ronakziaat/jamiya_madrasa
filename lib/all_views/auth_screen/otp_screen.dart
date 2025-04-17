@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jamia_madrasa/all_controllers/OtpController.dart';
+import 'package:jamia_madrasa/all_views/maulana/MaulanaHomeScreen.dart';
 import 'package:jamia_madrasa/all_views/parent/ParentsHomeScreen.dart';
 import 'package:jamia_madrasa/constant/constant.dart';
 import 'package:jamia_madrasa/themes/RoundedButtonFill.dart';
@@ -103,7 +104,7 @@ class OtpScreen extends StatelessWidget {
                                   6) {
                                 ShowToastDialog.showLoader("Verify otp".tr);
                                 ShowToastDialog.closeLoader();
-                                Get.offAll(const ParentsHomeScreen());
+                                Get.offAll(const MaulanaHomeScreen());
                               } else {
                                 ShowToastDialog.showToast(
                                     "Enter Valid otp".tr);
